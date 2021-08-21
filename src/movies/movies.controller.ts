@@ -24,7 +24,6 @@ export class MoviesController {
   @Get(':id')
   getOne(@Param('id') movieId: number): Movie {
     // (@필요한 걸 요청한다("id")) id라는 argument에:string형태로 저장)
-    console.log(typeof movieId);
     return this.moviesService.getOne(movieId);
   }
 
